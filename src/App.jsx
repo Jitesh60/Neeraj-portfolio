@@ -12,15 +12,19 @@ function App() {
 
   return (
     <div>
-    
-    <Routes>
-        <Route path="/" element={ <App/>}/>
-        <Route path="/HomePage" element={<HomePage />} />
-        <Route path="/ServicePage" element={<ServicePage />} />
-        <Route path="/WorkPage" element={<WorkProject />} />
-        <Route path="/ContactLast" element={<ContactLast />} />
-      
+      <Header/>
+      <HomePage/>
+     <ServicePage/>
+     <WorkProject/>
+     <ContactUs/>
+     <ContactLast />
+      <Routes>
+        <Route>
+
+        </Route>
       </Routes>
+    
+
       </div>
   );
 }
