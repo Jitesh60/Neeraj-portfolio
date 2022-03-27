@@ -5,10 +5,10 @@ function WorkProject() {
         <div className="flex flex-col p-16 overflow-hidden">
             <h1 className="text-5xl font-bold flex flex-col mb-16 ">Projects</h1>
             <div className="flex flex-col bg-black">
-                <div className=" p-3">
+                <div className="flex p-3">
                     <img className=" w-full w-1/2 mr-5 object-cover border border-white" src="src/project1.png" />
                     <div className="flex flex-col">
-                <img className="  mb-5 object-cover border border-white" src="src/project2.png"/>
+                         <img className="  mb-5 object-cover border border-white" src="src/project2.png"/>
                         <img className="  border border-white" src="src/project3.png" />
                         </div>
                 </div>
