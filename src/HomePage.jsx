@@ -15,7 +15,7 @@ function HomePage() {
                 
             </div>
             <div className="w-full h-full  grow ">
-                <img  src="src/jitesh.jpg" />
+                <img  src="/jitesh.jpg" />
                 </div>
            
         </div>
