@@ -9,23 +9,18 @@ import ServicePage from "./ServicePage";
 import WorkProject from "./WorkProject";
 
 function App() {
-
   return (
     <div>
-      <Header/>
-      <HomePage/>
-     <ServicePage/>
-     <WorkProject/>
-     <ContactUs/>
-     <ContactLast />
+      <Header />
+      <HomePage />
+      <ServicePage />
+      <WorkProject />
+      <ContactUs />
+      <ContactLast />
       <Routes>
-        <Route>
-
-        </Route>
+        <Route></Route>
       </Routes>
-    
-
-      </div>
+    </div>
   );
 }
 
