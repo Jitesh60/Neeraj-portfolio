@@ -1,8 +1,8 @@
 import react from "react";
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div className="bg-gray-100 flex-col md:flex  overflow-hidden p-5 md:p-16 justify-center items-between">
+    <div className="bg-gray-100 flex md:flex  overflow-hidden p-5 md:p-16 justify-center items-between shadow-lg">
       <div className="p-5">
         <h1 className="text-sm md:text-xl bg-transparent text-red-500 mb-5 md:mb-16">
           GET EVERY SINGLE SOLUTIONS.
@@ -18,11 +18,11 @@ function HomePage() {
           ahead.
         </p>
       </div>
-      <div className="w-full h-full  grow ">
+      <div className="w-full h-full ">
         <img src="/jitesh.jpg" />
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;

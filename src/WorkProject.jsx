@@ -1,12 +1,12 @@
 import react from "react";
 
-function WorkProject() {
+const WorkProject = () => {
   return (
-    <div className="flex flex-col p-2 md:p-16 overflow-hidden">
+    <div className="flex flex-col mb-16 p-2 md:p-16 overflow-hidden shadow-xl">
       <h1 className="text-2xl md:text-5xl font-bold flex flex-col mb-5 md:mb-16 ">
         Projects
       </h1>
-      <div className="flex flex-col bg-black">
+      <div className="flex flex-col justify-between bg-black">
         <div className=" flex-col md:flex p-3">
           <img
             className=" w-full md:w-1/2 mb-5  md:mr-5 object-cover border border-white"
@@ -37,6 +37,6 @@ function WorkProject() {
       </div>
     </div>
   );
-}
+};
 
 export default WorkProject;

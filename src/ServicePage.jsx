@@ -1,15 +1,15 @@
 import react from "react";
 import Card from "./Card";
 import { DiHtml5, DiCss3, DiJavascript, DiReact } from "react-icons/di";
-function ServicePage() {
+const ServicePage = () => {
   return (
-    <div className=" mt-5 md:mt-16 flex flex-col p-5 md:p-16">
+    <div className=" mt-5 md:mt-16 flex flex-col p-5 md:p-16 shadow-xl">
       <h1 className=" text-2xl md:text-5xl font-bold flex flex-col  mb-5 md:mb-16">
         What Service you will
         <span>Get from me! </span>
       </h1>
       <div className="text-3xl md:text-9xl flex flex-col items-center justify-between">
-        <div className=" flex-col md:flex  ">
+        <div className=" flex justify-between   ">
           <Card>
             <div className="text-red-500">
               <DiHtml5 />
@@ -40,6 +40,6 @@ function ServicePage() {
       </div>
     </div>
   );
-}
+};
 
 export default ServicePage;
