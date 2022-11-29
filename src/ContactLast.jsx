@@ -22,7 +22,7 @@ const ContactLast = () => {
               <div className="px-5 lg:px-20 md:px-8">
                 <h1 className="font-mono text-2xl">Email Address</h1>
                 <h1 className="font-thin text-md hover:text-red-500">
-                  jiteshbhatt60@gmail.com
+                  nj5036204@gmail.com
                 </h1>
               </div>
             </Card>
@@ -30,7 +30,7 @@ const ContactLast = () => {
               <div className="px-5 lg:px-20 md:px-8">
                 <h1 className="font-mono text-2xl">Phone Number</h1>
                 <h1 className="font-thin text-md hover:text-red-500">
-                  9528865610
+                  8445675679
                 </h1>
               </div>
             </Card>

@@ -8,6 +8,7 @@ import SideBar from "./SideBar";
 import MobileServicePage from "./MobileResponsiveService";
 import useBreakpoint from "./UseBreakPoint";
 import { AiOutlineClose } from "react-icons/ai";
+import { MdOutlineAddAPhoto } from "react-icons/md";
 
 function Header() {
   const { width } = useBreakpoint();
@@ -51,6 +52,10 @@ function Header() {
             }}
           />
         )}
+        <MdOutlineAddAPhoto
+          size={"50"}
+          className="fixed right-0 self-end visible mr-2 text-red-500 lg:invisible md:invisible"
+        />
         <h1 className="invisible mr-16 font-mono text-xl md:text-3xl lg:visible md:visible">
           JITESH BHATT
         </h1>

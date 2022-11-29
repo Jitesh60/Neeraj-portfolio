@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 const SideBar = ({
   homePage,
@@ -14,14 +15,14 @@ const SideBar = ({
     });
   };
   return (
-    <div className="fixed top-0 left-0 z-30 flex flex-col w-64 h-screen bg-white shadow-xl ">
+    <div className="fixed top-0 left-0 z-30 flex flex-col justify-between w-64 h-screen bg-white shadow-xl ">
       <ul className="flex flex-col mt-20">
         <li
           onClick={() => {
             scrollToSection(homePage);
             onClick();
           }}
-          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
+          className="mt-10 font-serif text-center hover:text-red-500 hover:border-b-black"
         >
           Home
         </li>
@@ -30,7 +31,7 @@ const SideBar = ({
             scrollToSection(servicePage);
             onClick();
           }}
-          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
+          className="mt-10 font-serif text-center hover:text-red-500 hover:border-b-black"
         >
           Service
         </li>
@@ -39,7 +40,7 @@ const SideBar = ({
             scrollToSection(workProject);
             onClick();
           }}
-          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
+          className="mt-10 font-serif text-center hover:text-red-500 hover:border-b-black"
         >
           Project
         </li>
@@ -48,11 +49,32 @@ const SideBar = ({
             scrollToSection(contactlast);
             onClick();
           }}
-          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
+          className="mt-10 font-serif text-center hover:text-red-500 hover:border-b-black"
         >
           Contact us
         </li>
       </ul>
+      <div className="flex items-center justify-center mt-40 text-slate-500 hover:text-red-500">
+        <a
+          className="ml-3"
+          href="https://www.facebook.com/neeraj.joshi.79656921?mibextid=ZbWKwL"
+          target="blank"
+        >
+          <span className="hover:text-red-500">
+            <BsFacebook size={"30"} className="hover:animate-ping" />
+          </span>
+        </a>
+
+        <a
+          className="ml-3"
+          href="https://instagram.com/__neeraj__joshi?igshid=YmMyMTA2M2Y="
+          target="blank"
+        >
+          <span className="hover:text-red-500">
+            <BsInstagram size={"30"} className="hover:animate-ping" />
+          </span>
+        </a>
+      </div>
     </div>
   );
 };
