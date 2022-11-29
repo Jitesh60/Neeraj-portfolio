@@ -1,29 +1,51 @@
 import react from "react";
 import { VscCallOutgoing, VscMail } from "react-icons/vsc";
+import Card from "./Card";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const ContactLast = () => {
   return (
-    <div className="bg-gray-900 p-5 md:p-16 shadow-xl  ">
-      <ContactUs />
-      <div className="mb-9 md:mb-32  flex flex-col items-center justify-center">
-        <div className="text-white  pt-5   flex items-center mb-3  ">
-          <VscCallOutgoing className="text-3xl hover:animate-ping" />
-          <h1 className="ml-2 text-lg ">9528865610</h1>
+    <div>
+      <div className="pb-5 shadow-xl ">
+        <ContactUs />
+        <div className="flex flex-col p-10">
+          <div>
+            <h1 className="flex flex-col font-mono text-3xl text-left ">
+              Let Work Together.
+              <span>Drop Me A Line.</span>
+            </h1>
+          </div>
+          <div className="flex items-center justify-between p-10">
+            <Card>
+              <div className="px-20">
+                <h1 className="font-mono text-2xl">Email Address</h1>
+                <h1 className="font-thin text-md hover:text-red-500">
+                  jiteshbhatt60@gmail.com
+                </h1>
+              </div>
+            </Card>
+            <Card>
+              <div className="px-20">
+                <h1 className="font-mono text-2xl">Phone Number</h1>
+                <h1 className="font-thin text-md hover:text-red-500">
+                  9528865610
+                </h1>
+              </div>
+            </Card>
+            <Card>
+              <div className="px-20">
+                <h1 className="font-mono text-2xl">My Address</h1>
+                <h1 className="font-thin text-md hover:text-red-500">
+                  Haldwani, Uttarakhand
+                </h1>
+              </div>
+            </Card>
+          </div>
         </div>
-        <div className="flex items-center text-white mb-2">
-          <VscMail className="text-3xl hover:animate-ping" />
-          <h1 className="ml-2  text-lg">jiteshbhatt60@gmail.com</h1>
-        </div>
-        <h1 className=" text-sm  text-white md:mb-2">
-          Bametha Bangar kheema , Halduchaur
-        </h1>
-        <h1 className="text-sm text-white md:mb-2 ">Haldwani , Nainital</h1>
-        <h1 className="text-sm text-white">Uttarakhand , 263139</h1>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

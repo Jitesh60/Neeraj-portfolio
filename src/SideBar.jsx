@@ -24,7 +24,7 @@ const SideBar = ({
             scrollToSection(homePage);
             onClick();
           }}
-          className="mt-10 text-center hover:text-red-500 hover:-translate-y-2 hover:border-b-black"
+          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
         >
           Home
         </li>
@@ -33,7 +33,7 @@ const SideBar = ({
             scrollToSection(servicePage);
             onClick();
           }}
-          className="mt-10 text-center hover:text-red-500 hover:-translate-y-2 hover:border-b-black"
+          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
         >
           Service
         </li>
@@ -42,7 +42,7 @@ const SideBar = ({
             scrollToSection(workProject);
             onClick();
           }}
-          className="mt-10 text-center hover:text-red-500 hover:-translate-y-2 hover:border-b-black"
+          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
         >
           Project
         </li>
@@ -51,7 +51,7 @@ const SideBar = ({
             scrollToSection(contactlast);
             onClick();
           }}
-          className="mt-10 text-center hover:text-red-500 hover:-translate-y-2 hover:border-b-black"
+          className="mt-10 font-mono text-center hover:text-red-500 hover:border-b-black"
         >
           Contact us
         </li>

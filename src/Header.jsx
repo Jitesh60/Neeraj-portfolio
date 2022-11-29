@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { BsHeartFill } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import HomePage from "./HomePage";
 import ServicePage from "./ServicePage";
@@ -40,44 +39,35 @@ function Header() {
             className="visible lg:invisible md:invisible"
           />
         )}
-        <h1 className="invisible mr-16 text-xl font-bold md:text-3xl lg:visible md:visible">
+        <h1 className="invisible mr-16 font-mono text-xl md:text-3xl lg:visible md:visible">
           JITESH BHATT
         </h1>
         <ul className="fixed flex invisible font-medium cursor-pointer md:visible md:sticky justify-evenly grow">
           <li
             onClick={() => scrollToSection(homePage)}
-            className="hover:text-red-500 hover:border-b-2 hover:-translate-y-2 hover:border-b-black"
+            className="font-mono hover:text-red-500 "
           >
             Home
           </li>
           <li
             onClick={() => scrollToSection(servicePage)}
-            className="hover:text-red-500 hover:border-b-2 hover:-translate-y-2 hover:border-b-black"
+            className="font-mono hover:text-red-500 "
           >
             Service
           </li>
           <li
             onClick={() => scrollToSection(workProject)}
-            className="hover:text-red-500 hover:border-b-2 hover:-translate-y-2 hover:border-b-black"
+            className="font-mono hover:text-red-500 "
           >
             Project
           </li>
           <li
             onClick={() => scrollToSection(contactlast)}
-            className="hover:text-red-500 hover:border-b-2 hover:-translate-y-2 hover:border-b-black"
+            className="font-mono hover:text-red-500 "
           >
             Contact us
           </li>
         </ul>
-        <a href="https://codeyogi.io/" target="blank">
-          <div className="flex items-center p-2 text-sm font-medium text-white bg-red-500 rounded-lg hover:bg-red-900 md:text-xl md:p-5">
-            <h1> With</h1>
-            <div className="mr-2 text-red-900 md:ml-2">
-              <BsHeartFill />
-            </div>
-            <h1> CodeYogi</h1>
-          </div>
-        </a>
       </div>
       <div ref={homePage}>
         <HomePage />

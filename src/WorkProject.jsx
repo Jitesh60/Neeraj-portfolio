@@ -2,39 +2,17 @@ import react from "react";
 
 const WorkProject = () => {
   return (
-    <div className="flex flex-col mb-16 p-2 md:p-16 overflow-hidden shadow-xl">
-      <h1 className="text-2xl md:text-5xl font-bold flex flex-col mb-5 md:mb-16 ">
+    <div className="flex flex-col p-10 mb-16 overflow-hidden shadow-xl ">
+      <h1 className="flex flex-col mb-5 font-mono text-4xl md:mb-16 ">
         Projects
       </h1>
-      <div className="flex flex-col justify-between bg-black">
-        <div className=" flex-col md:flex p-3">
-          <img
-            className=" w-full md:w-1/2 mb-5  md:mr-5 object-cover border border-white"
-            src="/project1.png"
-          />
-          <div className="flex flex-col">
-            <img
-              className="  mb-5 object-cover border border-white"
-              src="/project2.png"
-            />
-            <img className="  border border-white" src="/project3.png" />
-          </div>
-        </div>
-        <div className="md:flex p-2">
-          <img
-            className="w-full md:w-1/3 mb-3 mr-3 object-cover border border-white"
-            src="/project4.png"
-          />
-          <img
-            className=" w-full md:w-1/3 mb-3 mr-3  object-cover border border-white"
-            src="/project5.png"
-          />
-          <img
-            className="w-96  mb-3 mr-2 object-cover border border-white"
-            src="/project6.png"
-          />
-        </div>
-      </div>
+      <a
+        href="https://find-show.netlify.app/"
+        className="font-mono text-xl text-center cursor-pointer hover:text-red-500 hover:text-2xl"
+        target="blank"
+      >
+        Click to see Project
+      </a>
     </div>
   );
 };
