@@ -54,7 +54,7 @@ const SideBar = ({
           Contact us
         </li>
       </ul>
-      <div className="fixed bottom-0 flex items-center justify-center translate-x-full text-slate-500 hover:text-red-500">
+      <div className="fixed bottom-0 flex items-center justify-center pb-10 translate-x-full text-slate-500 hover:text-red-500">
         <a
           href="https://www.facebook.com/neeraj.joshi.79656921?mibextid=ZbWKwL"
           target="blank"
