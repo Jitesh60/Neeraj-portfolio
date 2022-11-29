@@ -54,7 +54,7 @@ function Header() {
         )}
         <MdOutlineAddAPhoto
           size={"50"}
-          className="fixed right-0 self-end visible mr-2 text-red-500 lg:invisible md:invisible"
+          className="fixed top-0 right-0 self-end visible mt-2 mr-2 text-red-500 lg:invisible md:invisible"
         />
         <h1 className="invisible mr-16 font-mono text-xl md:text-3xl lg:visible md:visible">
           JITESH BHATT
