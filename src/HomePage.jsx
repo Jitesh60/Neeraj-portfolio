@@ -2,7 +2,7 @@ import react from "react";
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center p-5 overflow-hidden bg-gray-100 shadow-lg md:flex md:p-16 items-between">
+    <div className="flex flex-col p-5 overflow-hidden bg-gray-100 shadow-lg lg:flex-row lg:justify-center md:flex-row ">
       <div className="p-5">
         <h1 className="mb-5 font-mono text-red-500 bg-transparent text-md ">
           GET EVERY SINGLE SOLUTIONS.

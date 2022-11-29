@@ -12,14 +12,14 @@ const ContactLast = () => {
         <ContactUs />
         <div className="flex flex-col p-10">
           <div>
-            <h1 className="flex flex-col font-mono text-3xl text-left ">
+            <h1 className="flex flex-col mb-4 font-mono text-3xl text-center item-center md:flex md:flex-col lg:flex lg:flex-col lg:text-left ">
               Let Work Together.
               <span>Drop Me A Line.</span>
             </h1>
           </div>
-          <div className="flex items-center justify-between p-10">
+          <div className="flex flex-col lg:flex-row md:flex-row md:items-center md:justify-between lg:items-center lg:justify-between lg:p-10 md:p-5 ">
             <Card>
-              <div className="px-20">
+              <div className="px-5 lg:px-20 md:px-8">
                 <h1 className="font-mono text-2xl">Email Address</h1>
                 <h1 className="font-thin text-md hover:text-red-500">
                   jiteshbhatt60@gmail.com
@@ -27,7 +27,7 @@ const ContactLast = () => {
               </div>
             </Card>
             <Card>
-              <div className="px-20">
+              <div className="px-5 lg:px-20 md:px-8">
                 <h1 className="font-mono text-2xl">Phone Number</h1>
                 <h1 className="font-thin text-md hover:text-red-500">
                   9528865610
@@ -35,7 +35,7 @@ const ContactLast = () => {
               </div>
             </Card>
             <Card>
-              <div className="px-20">
+              <div className="px-5 lg:px-20 md:px-8">
                 <h1 className="font-mono text-2xl">My Address</h1>
                 <h1 className="font-thin text-md hover:text-red-500">
                   Haldwani, Uttarakhand

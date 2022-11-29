@@ -5,8 +5,12 @@ import ServicePage from "./ServicePage";
 import WorkProject from "./WorkProject";
 import ContactLast from "./ContactLast";
 import SideBar from "./SideBar";
+import MobileServicePage from "./MobileResponsiveService";
+import useBreakpoint from "./UseBreakPoint";
+import { AiOutlineClose } from "react-icons/ai";
 
 function Header() {
+  const { width } = useBreakpoint();
   const [seeSideBar, setSeeSideBar] = useState(false);
   const homePage = useRef(null);
   const servicePage = useRef(null);
@@ -29,7 +33,7 @@ function Header() {
           onClick={() => setSeeSideBar(false)}
         />
       )}
-      <div className="sticky top-0 flex items-center justify-between w-full p-5 bg-white shadow-lg ">
+      <div className="sticky top-0 z-40 flex items-center justify-between w-full p-5 bg-white shadow-lg ">
         {!seeSideBar && (
           <AiOutlineMenu
             onClick={() => {
@@ -37,6 +41,14 @@ function Header() {
             }}
             size={"40"}
             className="visible lg:invisible md:invisible"
+          />
+        )}
+        {seeSideBar && (
+          <AiOutlineClose
+            size={"40"}
+            onClick={() => {
+              setSeeSideBar(false);
+            }}
           />
         )}
         <h1 className="invisible mr-16 font-mono text-xl md:text-3xl lg:visible md:visible">
@@ -73,7 +85,9 @@ function Header() {
         <HomePage />
       </div>
       <div ref={servicePage}>
-        <ServicePage />
+        {" "}
+        {(width || 0) >= 640 && <ServicePage />}
+        {(width || 0) <= 640 && <MobileServicePage />}
       </div>
       <div ref={workProject}>
         <WorkProject />

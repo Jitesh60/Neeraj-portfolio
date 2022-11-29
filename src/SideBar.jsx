@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineClose } from "react-icons/ai";
 
 const SideBar = ({
   homePage,
@@ -15,10 +14,8 @@ const SideBar = ({
     });
   };
   return (
-    <div className="fixed top-0 left-0 z-50 flex flex-col w-64 h-screen bg-gray-300 ">
-      <AiOutlineClose size={"40"} className="mt-5 ml-2" onClick={onClick} />
-      <h3 className="mt-20 text-2xl font-bold text-center">Menu</h3>
-      <ul className="flex flex-col">
+    <div className="fixed top-0 left-0 z-30 flex flex-col w-64 h-screen bg-white shadow-xl ">
+      <ul className="flex flex-col mt-20">
         <li
           onClick={() => {
             scrollToSection(homePage);

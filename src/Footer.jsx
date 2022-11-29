@@ -12,19 +12,21 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-evenly md:flex md:items-center">
       <div>
-        <h1 className="flex items-center font-mono text-slate-700">
+        <h1 className="flex flex-col items-center font-mono md:flex-row md:items-center lg:flex-row lg:items-center text-slate-700">
           Copyright ©2022 All rights reserved |
           <span>This Portfolio is made with</span>
-          <span className="ml-2 mr-2 text-red-500">
-            <BsHeartFill />
-          </span>
-          <a
-            href="https://codeyogi.io/"
-            target="blank"
-            className="font-mono text-red-500"
-          >
-            CodeYogi
-          </a>
+          <div className="flex items-center">
+            <span className="ml-2 mr-2 text-red-500">
+              <BsHeartFill />
+            </span>
+            <a
+              href="https://codeyogi.io/"
+              target="blank"
+              className="font-mono text-red-500"
+            >
+              CodeYogi
+            </a>
+          </div>
         </h1>
       </div>
       <div className="flex items-center text-slate-500 hover:bg-text-white">

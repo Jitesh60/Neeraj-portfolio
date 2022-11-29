@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 const ServicePage = () => {
   return (
-    <div className="flex flex-col p-10 mt-5 shadow-xl ">
+    <div className="flex flex-col invisible p-10 mt-5 shadow-xl lg:visible md:visible">
       <h1 className="flex flex-col mb-5 font-mono text-3xl">
         What Service you will
         <span>Get from me! </span>
