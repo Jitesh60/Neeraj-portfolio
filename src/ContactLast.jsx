@@ -13,7 +13,7 @@ const ContactLast = () => {
         <div className="flex flex-col p-10">
           <div>
             <h1 className="flex flex-col mb-4 font-mono text-3xl text-center item-center md:flex md:flex-col lg:flex lg:flex-col lg:text-left ">
-              Let Work Together.
+              Let Work.
               <span>Drop Me A Line.</span>
             </h1>
           </div>
